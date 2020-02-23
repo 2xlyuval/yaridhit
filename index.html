@@ -1,0 +1,85 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ירידHIT</title>
+    <meta name="description" content="name of game" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="names" />
+
+    <!-- CSS -->
+
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- Scripts -->
+    <!--jQuery library-->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <!--הקוד שמפעיל את תפריט הניווט-->
+    <script src="jScripts/myScript.js"></script>
+
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <!--קישור לדף עצמו כדי להתחיל את המשחק מחדש בלחיצה על הלוגו-->
+            <a id="logo" href="index.html">
+
+                ירידHIT <!--<p>שם המשחק שלכם</p>-->
+            </a>
+            <!--תפריט הניווט בראש העמוד-->
+            <nav>
+                <ul>
+                    <li><a class="about">אודות</a></li>
+                    <li><a class="howToPlay">איך משחקים?</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="aboutDiv" class="popUp bounceInDown hide">
+            <div style="font-size: 15pt; color: #3F1140; font-weight:900;">
+                <a class="closeAbout" style="display: block;float: left;">
+                    X
+                </a>
+                <p style="padding: 1%; float: right; margin: 0;">
+                    אודות
+                </p>
+            </div>
+            <img id="logo" src="images/logo.png" style="width: 30%;" />
+            <p style="line-height: 35px;">
+                אפיון ופיתוח:
+                <em>יובל פנחס ומעיין חדד</em>
+                <br />
+                אופיין ופותח במסגרת פרויקט בקורסים:
+                <br />
+                סביבות לימוד אינטראקטיביות 1 + תכנות אינטראקטיבי 1
+                <br />
+                תש"פ
+            </p>
+            <p>
+                <div>
+                    <a href="https://www.hit.ac.il/telem/overview" target="_blank">הפקולטה לטכנולוגיות למידה</a>
+
+                </div>
+                <div>
+                    <img src="images/logosvg.png" style="width: 12%;"/>
+                </div>
+            </p>
+            <p style="font-size: 5pt;">
+                Sound effects obtained from <a href="https://www.zapsplat.com/">https://www.zapsplat.com</a>
+            </p>
+        </div>
+        <!--<div id="howToPlayDiv" class="popUp bounceInDown hide">
+            <a class="closeHowToPlay">X</a>
+            <p>כאן יכנסו התמונות/הסרטון המסביר כיצד לשחק</p>
+        </div>-->
+
+        <div id="gameArea" class="">
+            <!--src = הקישור של דף המשחק שלכם (לא קובץ האנימייט)-->
+            <iframe id="gameIframe" src="/game/combo_withFunctions.html" frameBorder="0" allowfullscreen="">Browser not compatible.</iframe>
+        </div>
+    </div>
+</body>
+
+</html>
