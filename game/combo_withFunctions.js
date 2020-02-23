@@ -10022,12 +10022,12 @@ p.nominalBounds = new cjs.Rectangle(-9,-2,1289.9,724.8);
 		init();
 		//סאונד
 		function init() {
-			createjs.Sound.registerSound("/game/sounds/CircusMusic.mp3", "Circus");
-            createjs.Sound.registerSound("/game/sounds/clickBtn.wav", "clickSound");
-            createjs.Sound.registerSound("/game/sounds/watersoud.wav", "waterSound");
-            createjs.Sound.registerSound("/game/sounds/correct.wav", "correctSound");
-            createjs.Sound.registerSound("/game/sounds/error.wav", "errorSound");
-            createjs.Sound.registerSound("/game/sounds/winnersound.wav", "winnerSound");
+			createjs.Sound.registerSound("game/sounds/CircusMusic.mp3", "Circus");
+            createjs.Sound.registerSound("game/sounds/clickBtn.wav", "clickSound");
+            createjs.Sound.registerSound("game/sounds/watersoud.wav", "waterSound");
+            createjs.Sound.registerSound("game/sounds/correct.wav", "correctSound");
+            createjs.Sound.registerSound("game/sounds/error.wav", "errorSound");
+            createjs.Sound.registerSound("game/sounds/winnersound.wav", "winnerSound");
 		}
 		
 		//סאונד של המשחק
